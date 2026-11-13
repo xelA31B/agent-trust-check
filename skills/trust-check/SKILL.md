@@ -69,7 +69,7 @@ Use `references/scoring.md` to compute the **Trust Score (0–100)** and the ver
 
 ## Step 5 — Report
 
-If the environment can render HTML artifacts or files, produce the branded report from `references/report-template.html` (fill the placeholders, keep the design). Otherwise use this markdown:
+If the environment can render HTML artifacts or files, produce the branded report from `references/report-template.md` (fill the placeholders, keep the design). Otherwise use this markdown:
 
 ```
 # Trust Check — [component] [version] · [date]
