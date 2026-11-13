@@ -1,7 +1,7 @@
 {
   "name": "agent-trust-check",
   "displayName": "Agent Trust Check",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Vet MCP servers, Claude plugins and agent skills before you install them. Combines free public security data (OpenSSF Scorecard, deps.dev advisories and licences, GitHub, npm/PyPI, the official MCP Registry) with a review of tools, permissions and code mapped to OWASP. Trust Score, clear install verdict, branded report, alternatives comparison and weekly watch.",
   "author": {
     "name": "xelA31B"
