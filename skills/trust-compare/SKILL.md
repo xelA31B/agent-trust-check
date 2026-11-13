@@ -38,4 +38,8 @@ Compare 2–5 components that do the same job and recommend the safest fit.
 - one line each
 ```
 
-Use the branded HTML template from `trust-check` when HTML output is available. Offer to run a full `trust-check` on the recommended component.
+Offer to run a full `trust-check` on the recommended component.
+
+## Branded report
+
+If the environment can render HTML artifacts or files, deliver the full report using `references/report-template.md` (fill the placeholders, keep the design and colours; use the score ring for the main score and status chips for pass / warn / fail / not checked). Otherwise use the markdown format above. Keep the chat reply to a short summary either way.

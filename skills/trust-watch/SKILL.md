@@ -44,6 +44,10 @@ Re-check installed agent components and report only what changed since the last 
 
 5. **Offer** to update the baseline (ask first).
 
+## Branded report
+
+If the environment can render HTML artifacts or files, deliver the full report using `references/report-template.md` (fill the placeholders, keep the design and colours; use the score ring for the main score and status chips for pass / warn / fail / not checked). Otherwise use the markdown format above. Keep the chat reply to a short summary either way.
+
 ## Recurring run
 
 Recommended cadence: weekly.
