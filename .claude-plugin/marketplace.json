@@ -1,0 +1,14 @@
+{
+  "name": "agent-trust-check",
+  "owner": {
+    "name": "xelA31B"
+  },
+  "description": "Single-plugin marketplace by xelA31B: Vet MCP servers, Claude plugins and agent skills before you install them. Combines free public security data (OpenSSF Scorecard, deps.dev advisories and licences, GitHub, npm/PyPI, the official MCP Registry) with a review of tools, permissions and code mapped to OWASP. Trust Score, clear install verdict, branded report, alternatives comparison and weekly watch.",
+  "plugins": [
+    {
+      "name": "agent-trust-check",
+      "source": "./",
+      "description": "Vet MCP servers, Claude plugins and agent skills before you install them. Combines free public security data (OpenSSF Scorecard, deps.dev advisories and licences, GitHub, npm/PyPI, the official MCP Registry) with a review of tools, permissions and code mapped to OWASP. Trust Score, clear install verdict, branded report, alternatives comparison and weekly watch."
+    }
+  ]
+}
