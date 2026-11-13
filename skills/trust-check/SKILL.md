@@ -44,7 +44,7 @@ Record the exact URL queried for each result. If a source is unreachable or has 
 **If direct API requests are refused** (some Claude apps only open URLs that appear in the conversation or in search results):
 
 1. In Claude Code, use the environment's web fetch or an HTTP GET from the terminal instead.
-2. Otherwise, find the same data through web search and fetch the result pages: the Scorecard viewer (`scorecard.dev/viewer/?uri=github.com/{owner}/{repo}`), the package page on deps.dev, the GitHub repository page, the npm or PyPI package page.
+2. Otherwise, find the same data through web search and fetch the result pages: the Scorecard viewer (`scorecard.dev/viewer/?uri=github.com/<owner>/<repo>`), the package page on deps.dev, the GitHub repository page, the npm or PyPI package page.
 3. If that also fails, give the user the exact links in one message and ask them to open them and paste the result; continue with what is available meanwhile.
 4. In the report, list every source that could not be checked under "Not available" and note that a full check works best in Claude Code.
 
