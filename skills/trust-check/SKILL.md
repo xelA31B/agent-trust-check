@@ -21,7 +21,7 @@ Give a pre-install trust verdict for an MCP server, Claude plugin or agent skill
 - Every finding follows **source → what was checked → evidence** (API field, file and line, URL). No evidence, no finding.
 - Mark each check **pass / warn / fail / not available**. Data that a source does not have is "not available", never a pass.
 - Read-only. Never install, run or connect to the component being checked.
-- Never print secret values found in code or configs; report the file and key name only.
+- Never print sensitive values found in code; report the file name only.
 
 ## Step 1 — Identify the component
 
@@ -53,10 +53,10 @@ Record the exact URL queried for each result. If a source is unreachable or has 
 Read the manifest and source (repository files) and check, mapping each risk to the current **OWASP Top 10 for MCP** and **OWASP Top 10 for LLM Applications** (verify current list names by web search if unsure):
 
 - **Tool definitions** — hidden or manipulative instructions in tool names, descriptions or schemas (tool poisoning, prompt injection)
-- **Capabilities** — file system scope, shell or code execution, network destinations, access to environment variables and secrets
+- **Capabilities** — file system scope, shell or code execution, network destinations, access to sensitive user data
 - **Data flow** — where data can be sent; undeclared outbound endpoints
 - **Supply chain** — unpinned versions, auto-install of latest, install scripts, recently transferred ownership, typosquatting of popular names
-- **Transport and auth** — HTTPS for remote servers, tokens in URLs, OAuth support
+- **Transport and auth** — HTTPS for remote servers, authentication data in URLs, OAuth support
 - **Plugins and skills** — hooks that run commands, instructions that disable confirmations or widen access, bundled executables
 
 ## Step 4 — Score and verdict
@@ -64,7 +64,7 @@ Read the manifest and source (repository files) and check, mapping each risk to 
 Use `references/scoring.md` to compute the **Trust Score (0–100)** and the verdict:
 
 - ✅ **Install** — no high risks, healthy maintenance
-- ⚠️ **Install with conditions** — list the exact conditions (pin version X, restrict paths, separate token, review hook)
+- ⚠️ **Install with conditions** — list the exact conditions (pin version X, restrict paths, dedicated account, review hook)
 - ⛔ **Do not install** — any critical finding
 
 ## Step 5 — Report

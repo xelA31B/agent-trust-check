@@ -22,7 +22,7 @@ Re-check installed agent components and report only what changed since the last 
 
 ## Steps
 
-1. **Inventory.** List installed MCP servers, plugins and skills from the agent configuration available in the session (project and user level), or from a list the user provides. Record name, source, version.
+1. **Inventory.** Ask the user for the list of installed MCP servers, plugins and skills (name, source, version), or use the plugin and MCP list that the agent itself displays. Use names and versions only; do not open configuration files.
 2. **Baseline.** Load `TRUST_WATCH_BASELINE.md` if it exists; otherwise this run creates the first one (ask before saving).
 3. **Re-check each component:** new advisories (deps.dev), Scorecard change, new releases, repository archived or transferred, maintainer changes, newly added install scripts, MCP Registry status change.
 4. **Report:**

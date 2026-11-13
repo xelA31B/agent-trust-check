@@ -5,7 +5,7 @@ Start at 100 and subtract. Floor at 0. Any **critical** finding forces the verdi
 ## Critical (verdict ⛔)
 
 - Hidden or manipulative instructions in tool definitions (tool poisoning / prompt injection)
-- Undeclared sending of user data, files or secrets to third-party endpoints
+- Undeclared sending of user data or files to third-party endpoints
 - Obfuscated or minified code that downloads and runs remote code at install or start
 - Known critical vulnerability in the version that would be installed, with no fixed version used
 - Package name imitating a popular package (typosquatting) without a clear legitimate reason
@@ -15,7 +15,7 @@ Start at 100 and subtract. Floor at 0. Any **critical** finding forces the verdi
 - Shell or arbitrary code execution exposed as a tool without restriction
 - Unrestricted file system access (whole disk or home directory)
 - npm install scripts that run network or shell commands
-- Remote server over plain HTTP, or tokens passed in the URL
+- Remote server over plain HTTP, or authentication data passed in the URL
 - Known high-severity vulnerability in the installed version
 - Repository archived, or no commits for more than 12 months while still distributed
 
@@ -25,7 +25,7 @@ Start at 100 and subtract. Floor at 0. Any **critical** finding forces the verdi
 - Unpinned dependencies or instructions to always install the latest version
 - Single maintainer and project younger than 3 months
 - No licence, or a licence that restricts the user's intended use
-- Requests broad environment variables or secrets beyond its purpose
+- Requests broader access to user data than its purpose needs
 - Plugin hooks that run commands on every tool call
 
 ## Low (−5 each)

@@ -7,7 +7,7 @@ Some Claude apps refuse URLs that were not shown in the conversation or found by
 ## OpenSSF Scorecard
 
 - Endpoint: `https://api.scorecard.dev/projects/github.com/{owner}/{repo}`
-- Use: `score` (0–10) and checks. Most relevant checks: `Maintained`, `Code-Review`, `Branch-Protection`, `Dangerous-Workflow`, `Token-Permissions`, `Pinned-Dependencies`, `Signed-Releases`, `Vulnerabilities`, `Security-Policy`, `License`, `Binary-Artifacts`.
+- Use: `score` (0–10) and checks. Most relevant checks: `Maintained`, `Code-Review`, `Branch-Protection`, `Dangerous-Workflow`, `Pinned-Dependencies`, `Signed-Releases`, `Vulnerabilities`, `Security-Policy`, `License`, `Binary-Artifacts`.
 - Coverage: repositories in the weekly scan or that publish their results. Missing repository = "not available", not a failure.
 - Data licence: CDLA Permissive 2.0.
 - Viewer for humans: `https://scorecard.dev/viewer/?uri=github.com/{owner}/{repo}`
